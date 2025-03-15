@@ -72,7 +72,20 @@ You can customize the appearance of your digital business card by modifying the 
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0).
+
+This means you are free to:
+- Use this code for personal, non-commercial purposes
+- Modify and adapt the code
+- Share and redistribute the code
+
+Under the following conditions:
+- You must give appropriate credit
+- You may not use the material for commercial purposes
+
+For the full license text, see the [LICENSE](LICENSE) file in this repository or visit [Creative Commons BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+
+For commercial use, please contact the author.
 
 ## Acknowledgements
 
