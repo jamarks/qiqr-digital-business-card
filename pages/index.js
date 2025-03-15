@@ -16,9 +16,24 @@ async function Share(title, url) {
   }
 };
 
-export default function Profile({ user, qrimage }) {
+export default function Profile({ user }) {
   const [loader, setLoader] = useState(false)
+  const [qrimage, setQrimage] = useState('')
   const currentUrl = getSiteUrl()
+  
+  // Generate QR code on the client side to ensure it has the correct URL
+  useEffect(() => {
+    const generateQR = async () => {
+      try {
+        const qrDataUrl = await QRCode.toDataURL(currentUrl, { errorCorrectionLevel: 'H' });
+        setQrimage(qrDataUrl);
+      } catch (err) {
+        console.error('Error generating QR code:', err);
+      }
+    };
+    
+    generateQR();
+  }, [currentUrl]);
 
   return (
     <Layout title={user.name + ' | ' + user.company} description={user.about} keyworkds={user.name} currentURL={currentUrl} previewImage={user.photo} siteName='Digital Business Card'>
@@ -116,18 +131,12 @@ export default function Profile({ user, qrimage }) {
 }
 
 export async function getStaticProps() {
-  // Generate QR code for the site URL
-  // For server-side rendering, we'll use the environment variable or localhost
-  const siteUrl = getSiteUrl()
-  const qrimage = await QRCode.toDataURL(siteUrl, { errorCorrectionLevel: 'H' })
-  
   // Get user data from environment variables
   const user = getUserData()
 
   return {
     props: {
-      user,
-      qrimage
+      user
     }
   }
 }
