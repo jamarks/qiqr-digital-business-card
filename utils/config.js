@@ -20,5 +20,17 @@ export const getUserData = () => {
 };
 
 export const getSiteUrl = () => {
+  // If we're in the browser, we can get the current URL
+  if (typeof window !== 'undefined') {
+    // If NEXT_PUBLIC_SITE_URL is set, use that (allows for custom domains)
+    if (process.env.NEXT_PUBLIC_SITE_URL) {
+      return process.env.NEXT_PUBLIC_SITE_URL;
+    }
+    
+    // Otherwise, use the current URL (protocol + host)
+    return `${window.location.protocol}//${window.location.host}`;
+  }
+  
+  // During server-side rendering, fall back to the environment variable or localhost
   return process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 }; 

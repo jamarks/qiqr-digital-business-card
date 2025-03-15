@@ -117,6 +117,7 @@ export default function Profile({ user, qrimage }) {
 
 export async function getStaticProps() {
   // Generate QR code for the site URL
+  // For server-side rendering, we'll use the environment variable or localhost
   const siteUrl = getSiteUrl()
   const qrimage = await QRCode.toDataURL(siteUrl, { errorCorrectionLevel: 'H' })
   
