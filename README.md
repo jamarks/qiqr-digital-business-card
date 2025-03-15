@@ -2,7 +2,9 @@
 
 A simple, open-source digital business card that anyone can deploy for personal use. Share your contact information easily with a QR code.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fyourusername%2Fdigital-business-card&env=NEXT_PUBLIC_USER_NAME,NEXT_PUBLIC_USER_TITLE,NEXT_PUBLIC_USER_COMPANY,NEXT_PUBLIC_USER_EMAIL,NEXT_PUBLIC_USER_PHONE,NEXT_PUBLIC_USER_LINKEDIN,NEXT_PUBLIC_USER_WEBSITE,NEXT_PUBLIC_USER_PHOTO,NEXT_PUBLIC_SITE_URL&envDescription=Configuration%20for%20your%20digital%20business%20card&envLink=https%3A%2F%2Fgithub.com%2Fyourusername%2Fdigital-business-card%23environment-variables&project-name=digital-business-card&repository-name=digital-business-card)
+![Digital Business Card Example](https://github.com/jamarks/qiqr-digital-business-card/raw/main/public/images/preview-qiqr-w-logo.png)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjamarks%2Fqiqr-digital-business-card&env=NEXT_PUBLIC_USER_NAME,NEXT_PUBLIC_USER_TITLE,NEXT_PUBLIC_USER_COMPANY,NEXT_PUBLIC_USER_EMAIL,NEXT_PUBLIC_USER_PHONE,NEXT_PUBLIC_USER_LINKEDIN,NEXT_PUBLIC_USER_WEBSITE,NEXT_PUBLIC_USER_PHOTO,NEXT_PUBLIC_SITE_URL&envDescription=Configuration%20for%20your%20digital%20business%20card&envLink=https%3A%2F%2Fgithub.com%2Fjamarks%2Fqiqr-digital-business-card%23environment-variables&project-name=digital-business-card&repository-name=digital-business-card)
 
 ## Features
 
@@ -25,8 +27,8 @@ A simple, open-source digital business card that anyone can deploy for personal 
 
 1. Clone this repository
 ```bash
-git clone https://github.com/yourusername/digital-business-card.git
-cd digital-business-card
+git clone https://github.com/jamarks/qiqr-digital-business-card.git
+cd qiqr-digital-business-card
 ```
 
 2. Install dependencies
@@ -91,6 +93,33 @@ For commercial use, please contact the author.
 
 This project was converted from a commercial project to an open-source solution to make digital business cards accessible to everyone.
 
+## Contributing
+
+Contributions are welcome and encouraged! This project is open to everyone who wants to add more features or improve the existing ones. Here's how you can contribute:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/amazing-feature`)
+3. Make your changes
+4. Commit your changes (`git commit -m 'Add some amazing feature'`)
+5. Push to the branch (`git push origin feature/amazing-feature`)
+6. Open a Pull Request
+
+Some ideas for contributions:
+- Add more social media links
+- Create different themes/styles
+- Improve mobile responsiveness
+- Add animations or transitions
+- Implement vCard download functionality
+- Add multi-language support
+
+## Support the Project
+
+If you find this project useful, consider supporting its development:
+
+[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/javierwasserman)
+
+Your support helps maintain this project and develop new features!
+
 ---
 
-Made with ❤️ by [Your Name](https://github.com/yourusername)
+Made with ❤️ by [Javier Wasserman](https://github.com/jamarks)
